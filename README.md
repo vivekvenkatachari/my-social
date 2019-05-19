@@ -39,7 +39,7 @@ Lines        : 94.78% ( 127/134 )
   a. Will possibly filter by age less than or weight less than to see the relation
   b. Might spend more time with Material to understand the eco-sysyem
 2. Stored the data in memory, I would move it to a mock serve to eliminate complexity in my service
-3. I am not much familiar wil the Angular element, tried to read but could not do it with the time
+3. Need to read more to convert this to a Angular element
 
 
 
