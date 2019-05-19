@@ -1,0 +1,10 @@
+.container-dashboard {
+  border: 1px black solid;
+  margin: 1px;
+
+  ::ng-deep figure {
+    display: block;
+    padding: 5px;
+  }
+
+}
