@@ -34,8 +34,8 @@ export class AddUserComponent implements OnInit, OnDestroy {
   createForm(user?: User) {
     this.formGroup = this.formBuilder.group({
       name: [null, Validators.required],
-      age: [null, Validators.min(1)],
-      weight: [null, Validators.min(0.1)],
+      age: [1, Validators.min(1)],
+      weight: [0.1, Validators.min(0.1)],
       friends: [[]]
 
     });
@@ -77,10 +77,10 @@ export class AddUserComponent implements OnInit, OnDestroy {
   // For testing quickly
   addDefaultUsers() {
     const observableArray = [];
-    observableArray.push(this.userService.addUser(new User({name: 'User1', age: 10, weight: 45, friends: []})));
-    observableArray.push(this.userService.addUser(new User({name: 'User2', age: 11, weight: 47, friends: [1]})));
-    observableArray.push(this.userService.addUser(new User({name: 'User3', age: 9, weight: 35, friends: [1, 2]})));
-    observableArray.push(this.userService.addUser(new User({name: 'User4', age: 12, weight: 50, friends: [3]})));
+    observableArray.push(this.userService.addUser(new User({name: 'John Smith', age: 10, weight: 45, friends: []})));
+    observableArray.push(this.userService.addUser(new User({name: 'Joseph Smith', age: 11, weight: 47, friends: [1]})));
+    observableArray.push(this.userService.addUser(new User({name: 'Vivek Venkatachari', age: 9, weight: 35, friends: [1, 2]})));
+    observableArray.push(this.userService.addUser(new User({name: 'Lauren MacDowell', age: 12, weight: 50, friends: [3]})));
     from(observableArray).pipe(mergeAll()).subscribe(res => {
       this.router.navigateByUrl('/dashboard');
     });

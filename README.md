@@ -8,6 +8,8 @@ I generated this project using [Angular CLI](https://github.com/angular/angular-
 3. go to the repo folder and run npm install
 4. run `ng serve`
 5. open `localhost:4200` on your browser
+6. This app is AOT build ready. You need to run `ng build --prod`
+7. Copy files from dist folder and you put it in a webserver
 
 ## Running unit tests
 
@@ -39,7 +41,7 @@ Lines        : 94.78% ( 127/134 )
   a. Will possibly filter by age less than or weight less than to see the relation
   b. Might spend more time with Material to understand the eco-sysyem
 2. Stored the data in memory, I would move it to a mock serve to eliminate complexity in my service
-3. Need to read more to convert this to a Angular element
+3. I am not much familiar wil the Angular element, tried to read but could not do it with the time
 
 
 
